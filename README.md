@@ -18,7 +18,17 @@ F1score
 </br>
 
 ## Work
-- 
+- StratifiedKFold(state) fold=4
+- htmlタグの除去
+- goalをmaxとminの中央値に置換
+- AdamW
+- BCEWithLogitsLoss
+- Pooler Output
+  - Mean Poolin
+  - Attention Pooling
+- targetをstateとcategory1の2つにして予測(exp34,39,40)
+- Lasso,Ridge,SVM,BaysianRidge Blending in the embedding regression (exp44,45)
+- Optunaを使ってアンサンブルの重みを決定
 
 
 </br>
@@ -35,5 +45,5 @@ private LB : 0.8374
 
 ## 注意
 - 最終提出で使ったノートブックは残っていないものが多いがモデルが違うだけで形は同じものがほとんど
-- 最終提出ノートブックはexp106（提出時間とcolabの実行時間の関係で実行の途中でエラーが出ているがそのまま提出→再現性は後で確認済み)
+- 最終提出ノートブックはexp106（提出時間とcolabの実行時間の関係で実行の途中でエラーが出ているがそのまま提出 → 再現性は後で確認済み)
 - train inference フォルダ以外のノートブックは「ensemble weight search.ipynb」以外つかっていない
